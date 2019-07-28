@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fitness Express</title>
+	<link rel="stylesheet" href="../styles/slicknav.css" type="text/css">
+	<link rel="stylesheet" href="../styles/exercises.css" type="text/css">	
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="../scripts/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#nav_menu').slicknav({prependTo: '#mobile_menu'});
+		});	
+	</script>
+</head>
+
+<body>
+	<span id="top"></span>
+	<header>
+		<a href="../index.html"><h1>Fitness Express</h1></a>
+		<div id="h2-wrapper"><h2>Workout guides for <br> the gains you want</h2></div>	
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">			
+		<ul id="nav-list">
+			<li class="main_li">
+				<a href="../index.html">Home</a>
+			</li>
+			<li class="main_li">
+				<a href="../workouts/workouts_main.html">Workouts <span class="sub-icon">»</span></a>
+				<ul class="nav_sub">
+					<li><a href="../workouts/beginner.html">Beginner</a></li>
+					<li><a href="../workouts/intermediate.html">Intermediate</a></li>
+					<li><a href="../workouts/advanced.html">Advanced</a></li>
+				</ul>
+			</li>
+			<li class="main_li">
+				<a href="exercises_main.html">Exercises <span class="sub-icon">»</span></a>
+				<ul class="nav_sub">
+					<li><a href="abs_exercises.html" >Abs</a></li>
+					<li><a href="arms_exercises.html">Arms</a></li>
+					<li><a href="back_exercises.html">Back</a></li>
+					<li><a href="chest_exercises.html">Chest</a></li>
+					<li><a href="legs_exercises.html">Legs</a></li>
+					<li><a href="shoulder_exercises.html">Shoulders</a></li>
+				</ul>
+			</li>
+			<li class="main_li">
+				<a href="../nutrition/nutrition_main.html">Nutrition <span class="sub-icon">»</span></a>
+				<ul class="nav_sub">
+					<li><a href="../nutrition/mass.html">Nutrition Plan</a></li>
+				</ul>
+			</li>
+			<li class="main_li">
+				<a href="../about/about.html">About</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<main>
+		<div id="wrapper">
+			<aside>
+				<h3>Exercises</h3>
+				<ul>
+					<li><a href="abs_exercises.html" >Abs</a></li>
+					<li id="current"><a href="arms_exercises.html">Arms</a></li>
+					<li><a href="back_exercises.html">Back</a></li>
+					<li><a href="chest_exercises.html">Chest</a></li>
+					<li><a href="legs_exercises.html">Legs</a></li>
+					<li><a href="shoulder_exercises.html">Shoulders</a></li>
+				</ul>
+				
+				<h3>Muscle Group</h3>
+				<ul>
+					<li><a href="#biceps">Biceps</a></li>
+					<li><a href="#forearms">Forearms</a></li>
+					<li><a href="#triceps">Triceps</a></li>
+				</ul>
+			</aside>
+			<section>
+				<h1 id="biceps">Arm Exercises</h1>
+				<ul>
+					<h2>Biceps</h2>
+					<li>
+						<div class="content">
+							<p>Barbell Bicep Curl</p>
+							<div class="exersise_pics">
+								<img src="../images/exercises/biceps/bb_curl1.jpg" alt="exercise display">
+								<img src="../images/exercises/biceps/bb_curl2.jpg" alt="exercise display">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="content">
+							<p>Dumbbell Bicep Curl</p>
+							<div class="exersise_pics">
+								<img src="../images/exercises/biceps/dmb_curl1.jpg" alt="exercise display">
+								<img src="../images/exercises/biceps/dmb_curl2.jpg" alt="exercise display">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="content">
+							<p>Hammer Curl</p>
+							<div class="exersise_pics">
+								<img src="../images/exercises/biceps/hmr_curl1.jpg" alt="exercise display">
+								<img src="../images/exercises/biceps/hmr_curl2.jpg" alt="exercise display">
+							</div>
+						</div>
+					</li>					
+					<li>
+						<div class="content">
+							<p>EZ Bar Curl</p>
+							<div class="exersise_pics">
+								<img src="../images/exercises/biceps/ez_curl1.jpg" alt="exercise display">
+								<img src="../images/exercises/biceps/ez_curl2.jpg" alt="exercise display">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="content">
+							<p>Preacher Curl</p>
+							<div class="exersise_pics">
+							<img src="../images/exercises/biceps/preacher_curl1.jpg" alt="exercise display">
+							<img src="../images/exercises/biceps/preacher_curl2.jpg" alt="exercise display">
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<h2 id="forearms">Forearms</h2>
+					<li>
+						<div class="content">
+							<p>Barbell Palm Up Wrist Curl</p>
+							<div class="exersise_pics">
+								<img src="../images/exercises/forearms/wrist_curl_up1.jpg" alt="exercise display">
+								<img src="../images/exercises/forearms/wrist_curl_up2.jpg" alt="exercise display">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="content">
+							<p>Barbell Palm Down Wrist Curl</p>
+							<div class="exersise_pics">
+								<img src="../images/exercises/forearms/wrist_curl_down1.jpg" alt="exercise display">
+								<img src="../images/exercises/forearms/wrist_curl_down2.jpg" alt="exercise display">
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<h2 id="triceps">Triceps</h2>
+					<li>
+						<div class="content">
+							<p>Cable Pushdown</p>
+							<div class="exersise_pics">
+								<img src="../images/exercises/triceps/cable_pushdown1.jpg" alt="exercise display">
+								<img src="../images/exercises/triceps/cable_pushdown2.jpg" alt="exercise display">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="content">
+							<p>Close Grip Barbell Press</p>
+							<div class="exersise_pics">
+								<img src="../images/exercises/triceps/close_bb_press1.jpg" alt="exercise display">
+								<img src="../images/exercises/triceps/close_bb_press2.jpg" alt="exercise display">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="content">
+							<p>Dumbbell Tricep Extension</p>
+							<div class="exersise_pics">
+								<img src="../images/exercises/triceps/db_tricep_ext1.jpg" alt="exercise display">
+								<img src="../images/exercises/triceps/db_tricep_ext2.jpg" alt="exercise display">
+							</div>
+						</div>
+					</li>					
+					<li>
+						<div class="content">
+							<p>Dips</p>
+							<div class="exersise_pics">
+								<img src="../images/exercises/triceps/dips1.jpg" alt="exercise display">
+								<img src="../images/exercises/triceps/dips2.jpg" alt="exercise display">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="content">
+							<p>EZ Bar Skull Crusher</p>
+							<div class="exersise_pics">
+							<img src="../images/exercises/triceps/ez_skull_crusher1.jpg" alt="exercise display">
+							<img src="../images/exercises/triceps/ez_skull_crusher2.jpg" alt="exercise display">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+		
+			<a href="#top" id="top-link">Back to top</a>
+		</div>
+	</main>
+	
+	<footer>
+		<p>&copy; Created by Paul Jacobus Dreyer 2019</p>
+	</footer>
+</body>
+</html>

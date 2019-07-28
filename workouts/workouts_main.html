@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fitness Express</title>
+	<link rel="stylesheet" href="../styles/slicknav.css" type="text/css">
+	<link rel="stylesheet" href="../styles/workouts_main.css" type="text/css">	
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="../scripts/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#nav_menu').slicknav({prependTo: '#mobile_menu'});
+		});	
+	</script>
+</head>
+
+<body>
+	<span id="top"></span>
+	<header>
+		<a href="../index.html"><h1>Fitness Express</h1></a>
+		<div id="h2-wrapper"><h2>Workout guides for <br> the gains you want.</h2></div>	
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">			
+		<ul id="nav-list">
+			<li class="main_li">
+				<a href="../index.html">Home</a>
+			</li>
+			<li class="main_li">
+				<a href="workouts_main.html">Workouts <span class="sub-icon">»</span></a>
+				<ul class="nav_sub">
+					<li><a href="beginner.html">Beginner</a></li>
+					<li><a href="intermediate.html">Intermediate</a></li>
+					<li><a href="advanced.html">Advanced</a></li>
+				</ul>
+			</li>
+			<li class="main_li">
+				<a href="../exercises/exercises_main.html">Exercises <span class="sub-icon">»</span></a>
+				<ul class="nav_sub">
+					<li><a href="../exercises/abs_exercises.html" >Abs</a></li>
+					<li><a href="../exercises/arms_exercises.html">Arms</a></li>
+					<li><a href="../exercises/back_exercises.html">Back</a></li>
+					<li><a href="../exercises/chest_exercises.html">Chest</a></li>
+					<li><a href="../exercises/legs_exercises.html">Legs</a></li>
+					<li><a href="../exercises/shoulder_exercises.html">Shoulders</a></li>
+				</ul>
+			</li>
+			<li class="main_li">
+				<a href="../nutrition/nutrition_main.html">Nutrition <span class="sub-icon">»</span></a>
+				<ul class="nav_sub">
+					<li><a href="../nutrition/mass.html">Nutrition Plan</a></li>
+				</ul>
+			</li>
+			<li class="main_li">
+				<a href="../about/about.html">About</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<main>
+		<div id="wrapper">
+			<section>
+			
+			<h1>Workouts</h1>
+			<img src="../images/workouts.png" alt="workout image">
+			<h2><a href="beginner.html">Beginner Workout Routine</a></h2>
+			<p>
+				Here are a few workout routines to choose from to get you started on getting used to working your way up to your perfect body.<br>
+				If you are new to working out, we recommend starting with the beginner workout routine. It's easy to get in to and doesn't include
+				very complicated exercises.
+			</p>
+			<h2><a href="intermediate.html">Intermediate Workout Routine</a></h2>
+			<p>
+				If you have some experience in the gym and you just want to take your gains that one step further, then you can try the intermediate
+				workout routine. It provides some more volume in your daily exercises and some more complex exercises which will push you to a new level.
+			</p>
+			<h2><a href="advanced.html">Advanced Workout Routine</a></h2>
+			<p>
+				For those who have been working out for a few years and are looking for a challenge with the possibility of extreme results, the advanced 
+				workout routine is just the thing you need. It promotes high volume workouts and pushes you to work out all the muscles twice a week.
+			</p>
+			</section>
+			
+		
+			<a href="#top" id="top-link">Back to top</a>
+		</div>
+	</main>
+	
+	<footer>
+		<p>&copy; Created by Paul Jacobus Dreyer 2019</p>
+	</footer>
+</body>
+</html>

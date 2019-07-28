@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fitness Express</title>
+	<link rel="stylesheet" href="../styles/slicknav.css" type="text/css">
+	<link rel="stylesheet" href="../styles/nutrition_main.css" type="text/css">	
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="../scripts/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#nav_menu').slicknav({prependTo: '#mobile_menu'});
+		});	
+	</script>
+</head>
+
+<body>
+	<span id="top"></span>
+	<header>
+		<a href="../index.html"><h1>Fitness Express</h1></a>
+		<div id="h2-wrapper"><h2>Workout guides for <br> the gains you want.</h2></div>	
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">			
+		<ul id="nav-list">
+			<li class="main_li">
+				<a href="../index.html">Home</a>
+			</li>
+			<li class="main_li">
+				<a href="../workouts/workouts_main.html">Workouts <span class="sub-icon">»</span></a>
+				<ul class="nav_sub">
+					<li><a href="../workouts/beginner.html">Beginner</a></li>
+					<li><a href="../workouts/intermediate.html">Intermediate</a></li>
+					<li><a href="../workouts/advanced.html">Experienced</a></li>
+				</ul>
+			</li>
+			<li class="main_li">
+				<a href="../exercises/exercises_main.html">Exercises <span class="sub-icon">»</span></a>
+				<ul class="nav_sub">
+					<li><a href="../exercises/abs_exercises.html" >Abs</a></li>
+					<li><a href="../exercises/arms_exercises.html">Arms</a></li>
+					<li><a href="../exercises/back_exercises.html">Back</a></li>
+					<li><a href="../exercises/chest_exercises.html">Chest</a></li>
+					<li><a href="../exercises/legs_exercises.html">Legs</a></li>
+					<li><a href="../exercises/shoulder_exercises.html">Shoulders</a></li>
+				</ul>
+			</li>
+			<li class="main_li">
+				<a href="nutrition_main.html">Nutrition <span class="sub-icon">»</span></a>
+				<ul class="nav_sub">
+					<li><a href="mass.html">Nutrition Plan</a></li>
+				</ul>
+			</li>
+			<li class="main_li">
+				<a href="../about/about.html">About</a>
+			</li>
+		</ul>
+	</nav>
+
+	
+	<main>
+		<div id="wrapper">
+			<section>
+				<h1>Nutrition</h1>
+				<div id="img_wrapper">
+					<img src="../images/nutrition_main.jpg">
+				</div>				
+				<p>
+					The biggest part of getting into shape is getting your eating habbits better.
+					Eating a good amount of carbs, protein and healthy fats will go a long way.
+				</p>
+				<h2>Carbohydrates</h2>
+				<p>
+					Carbohydrates are your body's preferred fuel source. 
+					You want every gram of carbohydrate you consume to be utilized as an immediate fuel source.
+					Don't eat more carbs than you need, as getting too much carbs will result in the extra energy being stored as fat.
+				</p>
+				<h2>Protein</h2>
+				<p>
+					Protein is the main nutrient that your muscles need to heal and grow. Your body needs protein to repair damaged muscle fibres from workouts
+					and is overall necessary for your body to function at its best.
+				</p>
+				<p>
+					The best amount of protein that is recommended to consume is about a gram of protein per pound of body weight. 
+					Any more protein might not be absorbed as your body can only take in so much, as opposed to fats and carbs which can be stored.
+				</p>
+				<h2>Fats</h2>
+				<p>
+					Fat are an essential part of our diet and is important for good health. 
+					There are different types of fats, with some fats being healthier than others. 
+					It is important to eat unsaturated fats in small amounts as part of a balanced diet.
+				</p>
+				<p>
+					Fats also act as a source of energy, but gets absorbed much slower than carbs.
+					Fats can act as an alternate source of energy for the day so you dont have to rely on carbs too much.
+				</p>
+
+				<a href="mass.html" >Try out our sample nutrition plan for gaining lean mass</a>
+
+				<a href="#top" id="top-link">Back to top</a>
+			</section>
+		</div>			
+	</main>
+	
+	<footer>
+		<p>&copy; Created by Paul Jacobus Dreyer 2019</p>
+	</footer>
+</body>
+</html>

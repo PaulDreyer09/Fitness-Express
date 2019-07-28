@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fitness Express</title>
+	<link rel="stylesheet" href="styles/slicknav.css" type="text/css">
+	<link rel="stylesheet" href="styles.css" type="text/css">	
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="scripts/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#nav_menu').slicknav({prependTo: '#mobile_menu'});
+		});	
+	</script>
+</head>
+
+<body>
+	<span id="top"></span>
+	<header>
+		<a href="index.html"><h1>Fitness Express</h1></a>
+		<div id="h2-wrapper"><h2>Workout guides for <br> the gains you want.</h2></div>	
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">			
+		<ul id="nav-list">
+			<li class="main_li">
+				<a href="index.html">Home</a>
+			</li>
+			<li class="main_li">
+				<a href="workouts/workouts_main.html">Workouts <span class="sub-icon">»</span></a>
+				<ul class="nav_sub">
+					<li><a href="workouts/beginner.html">Beginner</a></li>
+					<li><a href="workouts/intermediate.html">Intermediate</a></li>
+					<li><a href="workouts/advanced.html">Experienced</a></li>
+				</ul>
+			</li>
+			<li class="main_li">
+				<a href="exercises/exercises_main.html">Exercises <span class="sub-icon">»</span></a>
+				<ul class="nav_sub">
+					<li><a href="exercises/abs_exercises.html" >Abs</a></li>
+					<li><a href="exercises/arms_exercises.html">Arms</a></li>
+					<li><a href="exercises/back_exercises.html">Back</a></li>
+					<li><a href="exercises/chest_exercises.html">Chest</a></li>
+					<li><a href="exercises/legs_exercises.html">Legs</a></li>
+					<li><a href="exercises/shoulder_exercises.html">Shoulders</a></li>
+				</ul>
+			</li>
+			<li class="main_li">
+				<a href="nutrition/nutrition_main.html">Nutrition <span class="sub-icon">»</span></a>
+				<ul class="nav_sub">
+					<li><a href="nutrition/mass.html">Nutrition Plan</a></li>
+				</ul>
+			</li>
+			<li class="main_li">
+				<a href="about/about.html">About</a>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<div id="wrapper">			
+			<div id="content">
+				<section id="gains-section" class="text">
+					<h2>Begin your quest for gains</h2>
+					<img src="images/gains.jpeg" alt="Gains_image">					
+					<p>
+						We believe that everyone should have the necessary information to improve their health and fitness lifestyle to reach their goals.
+					</p>
+					
+				</section>
+				
+				<section id="routine-section" class="text">
+										
+					<a href="workouts/workouts_main.html"><h2>Get your workout routine started</h2></a>
+					<img src="images/routine.jpg">
+					<p>
+						If you have a set goal in mind, please check out our workout plans to have a good 
+						understanding on where to begin working on a solid foundation for reaching those goals.
+						Moving forward with your journey in building the body you want, 
+						you can modify and customise workout programs for your personal prefference and needs.
+					</p>				
+				</section>				
+				
+				<section id="exercise-section" class="text">	
+					<a href="exercises/exercises_main.html"><h2>Learn about the exercises</h2></a>	
+					<img src="images/exercises.jpg" alt="Exercises_image">				
+					<p>
+						If you are still new and don't yet understand which exercises are beneficial for
+						certain muscles, you may want to check the Exercises section which will give you
+						a list of exercises for each bodypart.
+						Using this information you can also personalise your workout routines
+						and create the perfect plan for your goals.
+					</p>
+				</section>	
+							
+			  <section id="nutrition-section" class="text">					
+					<a href="nutrition/nutrition_main.html"><h2>Learn about nutrition</h2></a>
+					<img src="images/nutrition.jpg" alt="Nutrition_image">
+					<p>
+						As most of the athletes already know,
+						the true key to see real progress is proper nutrition.
+						We have a few nutrition plans which can give you
+						a good idea of how to plan your meals for good results.
+					</p>
+				</section>			
+			</div>
+			<a href="#top" id="top-link">Back to top</a>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; Created by Paul Jacobus Dreyer 2019</p>
+	</footer>
+</body>
+</html>
