@@ -1,0 +1,120 @@
+/* Default style for desktop computers and laptops*/
+body {
+  font-family: Arial, sans-serif, serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    90deg,
+    #22224f 0%,
+    white 25%,
+    white 75%,
+    #22224f 100%
+  );
+  background-attachment: fixed;
+}
+/* Hide mobile menu */
+#mobile_menu {
+  display: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+@import "header";
+
+/* Styles for the main content */
+
+main {
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 960px;
+  h1 {
+    font-size: 3em;
+  }
+}
+
+#wrapper {
+  max-width: 960px;
+  background: #fff;
+
+  p {
+    margin-top: 2em;
+  }
+}
+
+@import "footer";
+
+@media only screen and (max-width: 959px) {
+  body {
+    background-image: none;
+  }
+
+  #nav_menu .main_li ul {
+    border: none;
+  }
+}
+
+/* Low Resolution Tablets, Mobiles (Landscape) */
+@media only screen and (max-width: 767px) {
+  #nav_menu {
+    display: none;
+  }
+
+  #mobile_menu {
+    display: block;
+  }
+
+  header h1 {
+    font-size: 300%;
+    line-height: 150%;
+  }
+
+  #wrapper {
+    p {
+      font-size: 90%;
+    }
+
+    h1 {
+      font-size: 220%;
+    }
+    aside li a {
+      line-height: 2em;
+    }
+    section li {
+      height: 100px;
+    }
+  }
+
+  #h2-wrapper h2 {
+    display: none;
+  }
+  #mobile_menu {
+    color: red !important;
+  }
+
+  .sub-icon {
+    display: none;
+  }
+
+  .slicknav_menu {
+    background-color: #2c3e50 !important;
+
+    .main_li {
+      font-size: 150%;
+    }
+  }
+}
+
+/* Most of the Smartphones Mobiles (Portrait) */
+@media only screen and (max-width: 479px) {
+  h3 {
+    font-size: 150%;
+  }
+
+  p {
+    font-size: 80%;
+  }
+}

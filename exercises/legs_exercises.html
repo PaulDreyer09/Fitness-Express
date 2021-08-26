@@ -1,143 +1,232 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fitness Express</title>
-	<link rel="stylesheet" href="../styles/slicknav.css" type="text/css">
-	<link rel="stylesheet" href="../styles/exercises.css" type="text/css">	
-	<link rel="shortcut icon" href="../images/favicon.ico">
-	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="../scripts/jquery.slicknav.min.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			$('#nav_menu').slicknav({prependTo: '#mobile_menu'});
-		});	
-	</script>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fitness Express</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../styles/slicknav.css" type="text/css" />
+    <link rel="stylesheet" href="../styles/exercises.css" type="text/css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="../scripts/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
+  </head>
 
-<body>
-	<span id="top"></span>
-	<header>
-		<a href="../index.html"><h1>Fitness Express</h1></a>
-		<div id="h2-wrapper"><h2>Workout guides for <br> the gains you want</h2></div>	
-	</header>
-	<nav id="mobile_menu"></nav>
-	<nav id="nav_menu">			
-		<ul id="nav-list">
-			<li class="main_li">
-				<a href="../index.html">Home</a>
-			</li>
-			<li class="main_li">
-				<a href="../workouts/workouts_main.html">Workouts <span class="sub-icon">»</span></a>
-				<ul class="nav_sub">
-					<li><a href="../workouts/beginner.html">Beginner</a></li>
-					<li><a href="../workouts/intermediate.html">Intermediate</a></li>
-					<li><a href="../workouts/advanced.html">Advanced</a></li>
-				</ul>
-			</li>
-			<li class="main_li">
-				<a href="exercises_main.html">Exercises <span class="sub-icon">»</span></a>
-				<ul class="nav_sub">
-					<li><a href="abs_exercises.html" >Abs</a></li>
-					<li><a href="arms_exercises.html">Arms</a></li>
-					<li><a href="back_exercises.html">Back</a></li>
-					<li><a href="chest_exercises.html">Chest</a></li>
-					<li><a href="legs_exercises.html">Legs</a></li>
-					<li><a href="shoulder_exercises.html">Shoulders</a></li>
-				</ul>
-			</li>
-			<li class="main_li">
-				<a href="../nutrition/nutrition_main.html">Nutrition <span class="sub-icon">»</span></a>
-				<ul class="nav_sub">
-					<li><a href="../nutrition/mass.html">Nutrition Plan</a></li>
-				</ul>
-			</li>
-			<li class="main_li">
-				<a href="../about/about.html">About</a>
-			</li>
-		</ul>
-	</nav>
-	
-	<main>
-		<div id="wrapper">
-			<aside>
-				<h3>Exercises</h3>
-				<ul>
-					<li><a href="abs_exercises.html" >Abs</a></li>
-					<li><a href="arms_exercises.html">Arms</a></li>
-					<li><a href="back_exercises.html">Back</a></li>
-					<li><a href="chest_exercises.html">Chest</a></li>
-					<li id="current"><a href="legs_exercises.html">Legs</a></li>
-					<li><a href="shoulder_exercises.html">Shoulders</a></li>
-				</ul>
-			</aside>
-			<section>
-				<h1>Leg Exercises</h1>
-				<ul>
-					<li>
-						<div class="content">
-							<p>Barbell Squat</p>
-							<div class="exersise_pics">
-								<img src="../images/exercises/legs/bb_squat1.jpg" alt="exercise display">
-								<img src="../images/exercises/legs/bb_squat2.jpg" alt="exercise display">
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="content">
-							<p>Leg Curl</p>
-							<div class="exersise_pics">
-								<img src="../images/exercises/legs/leg_curl1.jpg" alt="exercise display">
-								<img src="../images/exercises/legs/leg_curl2.jpg" alt="exercise display">
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="content">
-							<p>Leg Extension</p>
-							<div class="exersise_pics">
-								<img src="../images/exercises/legs/leg_ext1.jpg" alt="exercise display">
-								<img src="../images/exercises/legs/leg_ext2.jpg" alt="exercise display">
-							</div>
-						</div>
-					</li>					
-					<li>
-						<div class="content">
-							<p>Leg Press</p>
-							<div class="exersise_pics">
-								<img src="../images/exercises/legs/leg_press1.jpg" alt="exercise display">
-								<img src="../images/exercises/legs/leg_press2.jpg" alt="exercise display">
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="content">
-							<p>Seated Calve Raise</p>
-							<div class="exersise_pics">
-							<img src="../images/exercises/legs/st_calve_raise1.jpg" alt="exercise display">
-							<img src="../images/exercises/legs/st_calve_raise2.jpg" alt="exercise display">
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="content">
-							<p>Standing Calve Raise</p>
-							<div class="exersise_pics">
-							<img src="../images/exercises/legs/stand_calve_raise1.jpg" alt="exercise display">
-							<img src="../images/exercises/legs/stand_calve_raise2.jpg" alt="exercise display">
-							</div>
-						</div>
-					</li>
-				</ul>
-			</section>
-		
-			<a href="#top" id="top-link">Back to top</a>
-		</div>
-	</main>
-	
-	<footer>
-		<p>&copy; Created by Paul Jacobus Dreyer 2019</p>
-	</footer>
-</body>
+  <body>
+    <span id="top"></span>
+    <header>
+      <a href="../index.html"><h1>Fitness Express</h1></a>
+      <div id="h2-wrapper">
+        <h2>
+          Workout guides for <br />
+          the gains you want
+        </h2>
+      </div>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+      <ul id="nav-list">
+        <li class="main_li">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="main_li">
+          <a href="../workouts/workouts_main.html"
+            >Workouts <span class="sub-icon">»</span></a
+          >
+          <ul class="nav_sub">
+            <li><a href="../workouts/beginner.html">Beginner</a></li>
+            <li><a href="../workouts/intermediate.html">Intermediate</a></li>
+            <li><a href="../workouts/advanced.html">Advanced</a></li>
+          </ul>
+        </li>
+        <li class="main_li">
+          <a href="exercises_main.html"
+            >Exercises <span class="sub-icon">»</span></a
+          >
+          <ul class="nav_sub">
+            <li><a href="abs_exercises.html">Abs</a></li>
+            <li><a href="arms_exercises.html">Arms</a></li>
+            <li><a href="back_exercises.html">Back</a></li>
+            <li><a href="chest_exercises.html">Chest</a></li>
+            <li><a href="legs_exercises.html">Legs</a></li>
+            <li><a href="shoulder_exercises.html">Shoulders</a></li>
+          </ul>
+        </li>
+        <li class="main_li">
+          <a href="../nutrition/nutrition_main.html"
+            >Nutrition <span class="sub-icon">»</span></a
+          >
+          <ul class="nav_sub">
+            <li><a href="../nutrition/mass.html">Nutrition Plan</a></li>
+          </ul>
+        </li>
+        <li class="main_li">
+          <a href="../about/about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div id="wrapper">
+        <aside class="container-fluid">
+          <h3>Exercises</h3>
+          <ul>
+            <li>
+              <a
+                class="btn btn-sm btn-primary btn-block"
+                href="abs_exercises.html"
+                >Abs</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn btn-sm btn-primary btn-block"
+                href="arms_exercises.html"
+                >Arms</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn btn-sm btn-primary btn-block"
+                href="back_exercises.html"
+                >Back</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn btn-sm btn-primary btn-block"
+                href="chest_exercises.html"
+                >Chest</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn btn-sm btn-primary btn-block active"
+                href="legs_exercises.html"
+                >Legs</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn btn-sm btn-primary btn-block"
+                href="shoulder_exercises.html"
+                >Shoulders</a
+              >
+            </li>
+          </ul>
+        </aside>
+        <section>
+          <h1 class="text-primary">Leg Exercises</h1>
+          <ul>
+            <li>
+              <div class="content">
+                <p>Barbell Squat</p>
+                <div class="exersise_pics">
+                  <img
+                    src="../images/exercises/legs/bb_squat1.jpg"
+                    alt="exercise display"
+                  />
+                  <img
+                    src="../images/exercises/legs/bb_squat2.jpg"
+                    alt="exercise display"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="content">
+                <p>Leg Curl</p>
+                <div class="exersise_pics">
+                  <img
+                    src="../images/exercises/legs/leg_curl1.jpg"
+                    alt="exercise display"
+                  />
+                  <img
+                    src="../images/exercises/legs/leg_curl2.jpg"
+                    alt="exercise display"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="content">
+                <p>Leg Extension</p>
+                <div class="exersise_pics">
+                  <img
+                    src="../images/exercises/legs/leg_ext1.jpg"
+                    alt="exercise display"
+                  />
+                  <img
+                    src="../images/exercises/legs/leg_ext2.jpg"
+                    alt="exercise display"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="content">
+                <p>Leg Press</p>
+                <div class="exersise_pics">
+                  <img
+                    src="../images/exercises/legs/leg_press1.jpg"
+                    alt="exercise display"
+                  />
+                  <img
+                    src="../images/exercises/legs/leg_press2.jpg"
+                    alt="exercise display"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="content">
+                <p>Seated Calve Raise</p>
+                <div class="exersise_pics">
+                  <img
+                    src="../images/exercises/legs/st_calve_raise1.jpg"
+                    alt="exercise display"
+                  />
+                  <img
+                    src="../images/exercises/legs/st_calve_raise2.jpg"
+                    alt="exercise display"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="content">
+                <p>Standing Calve Raise</p>
+                <div class="exersise_pics">
+                  <img
+                    src="../images/exercises/legs/stand_calve_raise1.jpg"
+                    alt="exercise display"
+                  />
+                  <img
+                    src="../images/exercises/legs/stand_calve_raise2.jpg"
+                    alt="exercise display"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <a href="#top" id="top-link">Back to top</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; Created by Paul Jacobus Dreyer 2019</p>
+    </footer>
+  </body>
 </html>

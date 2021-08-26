@@ -4,11 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fitness Express</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="../styles/slicknav.css" type="text/css">
 	<link rel="stylesheet" href="../styles/workouts.css" type="text/css">	
 	<link rel="shortcut icon" href="../images/favicon.ico">
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<script src="../scripts/jquery.slicknav.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			$('#nav_menu').slicknav({prependTo: '#mobile_menu'});
@@ -20,7 +23,7 @@
 	<span id="top"></span>
 	<header>
 		<a href="../index.html"><h1>Fitness Express</h1></a>
-		<div id="h2-wrapper"><h2>Workout guides for <br> the gains you want.</h2></div>	
+		<div id="h2-wrapper"><h2>Workout guides for <br> the gains you want</h2></div>	
 	</header>
 	<nav id="mobile_menu"></nav>
 	<nav id="nav_menu">			
@@ -60,9 +63,9 @@
 	</nav>
 	
 	<main>
-		<div id="wrapper">			
+		<div class="container-fluid" id="wrapper">			
 			<section>
-				<h1>Intermediate Gym Routine</h1>
+				<h1 class="text-primary">Intermediate Gym Routine</h1>
 				<img id="top_img" src="../images/intermediate.jpg" alt="intermediate workout">
 				<p>
 					The key to keep on building on your gains is to keep pushing yourself further than before.
@@ -77,14 +80,14 @@
 					slightly with each set, so as to push the muscle to the limit even if the reps are less.
 				</p>
 			</section>
-			<aside>
+			<aside class="container-fluid">
 				<h3>Exercises</h3>
 				<ul>
-					<li><a href="#day1" >Day 1 : Chest</a></li>
-					<li><a href="#day2">Day 2 : Back</a></li>
-					<li><a href="#day3">Day 3 : Shoulders</a></li>
-					<li><a href="#day4">Day 4 : Legs</a></li>
-					<li><a href="#day5">Day 5 : Arms</a></li>
+					<li><a class="btn btn-sm btn-primary btn-block" href="#day1" >Day 1 : Chest</a></li>
+					<li><a class="btn btn-sm btn-primary btn-block" href="#day2">Day 2 : Back</a></li>
+					<li><a class="btn btn-sm btn-primary btn-block" href="#day3">Day 3 : Shoulders</a></li>
+					<li><a class="btn btn-sm btn-primary btn-block" href="#day4">Day 4 : Legs</a></li>
+					<li><a class="btn btn-sm btn-primary btn-block" href="#day5">Day 5 : Arms</a></li>
 				</ul>
 			</aside>
 			<section id="workout_section">		
@@ -92,8 +95,8 @@
 					<h2>Day 1: Chest</h2>		
 					<div class="content" id="day1">
 						<li> 									
-							<h3>Treadmill</h3>	
-							<div class="ex_content">		
+							<div class="list-heading"><h3>Treadmill</h3></div>
+							<div class="ex_content  container-fluid">		
 								<div class="exersise_info">	
 									<p>10 minutes</p>
 									<p>Jogging speed</p>
@@ -104,8 +107,8 @@
 							</div>
 						</li>
 						<li> 									
-							<h3>Flat Bench Press:</h3>	
-							<div class="ex_content">		
+							<div class="list-heading"><h3>Flat Bench Press:</h3></div>	
+							<div class="ex_content  container-fluid">		
 								<div class="exersise_info">							
 									<p>Sets: 4</p>
 									<p>Reps: 12 10 8 6</p>
@@ -117,8 +120,8 @@
 							</div>
 						</li>
 						<li>
-							<h3>Incline Dumbbell Press:</h3>
-							<div class="ex_content">
+							<div class="list-heading"><h3>Incline Dumbbell Press:</h3></div>
+							<div class="ex_content  container-fluid">
 								<div class="exersise_info">							
 									<p>Sets: 4</p>
 									<p>Reps: 12 10 8 6</p>
@@ -130,8 +133,8 @@
 							</div>
 						</li>
 						<li>
-							<h3>Decline Bench Press:</h3>
-							<div class="ex_content">
+							<div class="list-heading"><h3>Decline Bench Press:</h3></div>
+							<div class="ex_content  container-fluid">
 								<div class="exersise_info">							
 									<p>Sets: 4</p>
 									<p>Reps: 12 10 8 6</p>
@@ -143,8 +146,8 @@
 							</div>
 						 </li>
 						<li>
-							<h3>Flat Dumbbell Fly:</h3>
-								<div class="ex_content">
+							<div class="list-heading"><h3>Flat Dumbbell Fly:</h3></div>
+								<div class="ex_content  container-fluid">
 								<div class="exersise_info">
 									<p>Sets: 4</p>
 									<p>Reps: 12 10 8 6</p>
@@ -156,8 +159,8 @@
 							</div>
 						 </li>
 						<li>
-							<h3>Cable fly:</h3>
-							<div class="ex_content">
+							<div class="list-heading"><h3>Cable fly:</h3></div>
+							<div class="ex_content  container-fluid">
 								<div class="exersise_info">							
 									<p>Sets: 4</p>
 									<p>Reps: 20 per set</p>
@@ -174,8 +177,8 @@
 				<ul id="day2">	
 					<h2>Day 2: Back</h2>
 					<li> 									
-						<h3>Treadmill</h3>	
-						<div class="ex_content">		
+						<div class="list-heading"><h3>Treadmill</h3></div>	
+						<div class="ex_content  container-fluid">		
 							<div class="exersise_info">	
 								<p>10 minutes</p>
 								<p>Jogging speed</p>
@@ -186,8 +189,8 @@
 						</div>
 					</li>				
 					<li>
-						<h3>Wide Grip Cable Pulldown:</h3> 		
-						<div class="ex_content">				
+						<div class="list-heading"><h3>Wide Grip Cable Pulldown:</h3></div> 		
+						<div class="ex_content  container-fluid">				
 							<div class="exersise_info">
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 8 6</p>
@@ -199,8 +202,8 @@
 						</div>
 					</li>
 					<li>
-						<h3>Chin Up:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Chin Up:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 8 6</p>
@@ -212,8 +215,8 @@
 						</div>
 					</li>
 					<li>
-						<h3>Cable Row:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Cable Row:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 8 6</p>
@@ -225,8 +228,8 @@
 						</div>
 					 </li>
 					<li>
-						<h3>Bent Over Barbell Row:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Bent Over Barbell Row:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 8 6</p>
@@ -238,8 +241,8 @@
 						</div>
 					 </li>
 					 <li>
-						<h3>Barbell Deadlift:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Barbell Deadlift:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 8 6</p>
@@ -255,8 +258,8 @@
 				<ul id="day3">	
 					<h2>Day 3:Shoulders</h2>	
 					<li> 									
-						<h3>Treadmill</h3>	
-						<div class="ex_content">		
+						<div class="list-heading"><h3>Treadmill</h3></div>	
+						<div class="ex_content  container-fluid">		
 							<div class="exersise_info">	
 								<p>10 minutes</p>
 								<p>Jogging speed</p>
@@ -267,8 +270,8 @@
 						</div>
 					</li>	
 					<li>
-						<h3>Dumbbell Shoulder Press:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Dumbbell Shoulder Press:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 8 6</p>
@@ -280,8 +283,8 @@
 						</div>
 					</li>		
 					<li> 									
-						<h3>Front Lateral Raise:</h3>	
-						<div class="ex_content">		
+						<div class="list-heading"><h3>Front Lateral Raise:</h3></div>	
+						<div class="ex_content  container-fluid">		
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 10 8</p>
@@ -293,8 +296,8 @@
 						</div>
 					</li>
 					<li>
-						<h3>Side Lateral Raise:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Side Lateral Raise:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 10 8</p>
@@ -306,8 +309,8 @@
 						</div>
 					</li>	
 					<li>
-						<h3>Bent Over Lateral Raise:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Bent Over Lateral Raise:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 10 8</p>
@@ -319,8 +322,8 @@
 						</div>
 					</li>				
 					<li>
-						<h3>Barbell Shrug:</h3>
-							<div class="ex_content">
+						<div class="list-heading"><h3>Barbell Shrug:</h3></div>
+							<div class="ex_content  container-fluid">
 							<div class="exersise_info">
 								<p>Sets: 4</p>
 								<p>Reps: 20 per set</p>
@@ -336,8 +339,8 @@
 				<ul id="day4">	
 					<h2>Day 4: Legs</h2>
 					<li> 									
-						<h3>Treadmill</h3>	
-						<div class="ex_content">		
+						<div class="list-heading"><h3>Treadmill</h3></div>	
+						<div class="ex_content  container-fluid">		
 							<div class="exersise_info">	
 								<p>10 minutes</p>
 								<p>Jogging speed</p>
@@ -348,8 +351,8 @@
 						</div>
 					</li>				
 					<li> 									
-						<h3>Leg Press:</h3>	
-						<div class="ex_content">		
+						<div class="list-heading"><h3>Leg Press:</h3></div>	
+						<div class="ex_content  container-fluid">		
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 8 6</p>
@@ -361,8 +364,8 @@
 						</div>
 					</li>
 					<li>
-						<h3>Barbell Squat:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Barbell Squat:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 8 6</p>
@@ -374,8 +377,8 @@
 						</div>
 					</li>
 					<li>
-						<h3>Leg Extention:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Leg Extention:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 10 8</p>
@@ -387,8 +390,8 @@
 						</div>
 					 </li>
 					<li>
-						<h3>Lying Hamstring Curl:</h3>
-							<div class="ex_content">
+						<div class="list-heading"><h3>Lying Hamstring Curl:</h3></div>
+							<div class="ex_content  container-fluid">
 							<div class="exersise_info">
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 10 8</p>
@@ -400,8 +403,8 @@
 						</div>
 					 </li>
 					<li>
-						<h3>Standing Calve Raises:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Standing Calve Raises:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 20 per set</p>
@@ -413,8 +416,8 @@
 						</div>
 					</li>
 					<li>
-						<h3>Seated Calve Raises:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Seated Calve Raises:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 20 per set</p>
@@ -430,8 +433,8 @@
 				<ul id="day5">	
 					<h2>Day 5: Arms</h2>	
 					<li> 									
-						<h3>Treadmill</h3>	
-						<div class="ex_content">		
+						<div class="list-heading"><h3>Treadmill</h3></div>	
+						<div class="ex_content  container-fluid">		
 							<div class="exersise_info">	
 								<p>10 minutes</p>
 								<p>Jogging speed</p>
@@ -442,8 +445,8 @@
 						</div>
 					</li>			
 					<li> 									
-						<h3>Dumbbell Bicep Curl:</h3>	
-						<div class="ex_content">		
+						<div class="list-heading"><h3>Dumbbell Bicep Curl:</h3></div>	
+						<div class="ex_content  container-fluid">		
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 8 6</p>
@@ -455,8 +458,8 @@
 						</div>
 					</li>
 					<li>
-						<h3>Close Grip Bench Press:</h3>
-							<div class="ex_content">
+						<div class="list-heading"><h3>Close Grip Bench Press:</h3></div>
+							<div class="ex_content  container-fluid">
 							<div class="exersise_info">
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 8 6</p>
@@ -468,8 +471,8 @@
 						</div>
 				 	</li>
 					<li>
-						<h3>Barbell Bicep Curl:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Barbell Bicep Curl:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 8 6</p>
@@ -481,8 +484,8 @@
 						</div>
 					</li>
 					<li>
-						<h3>Easy Bar Scull Crusher:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Easy Bar Scull Crusher:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 8 6</p>
@@ -494,8 +497,8 @@
 						</div>
 					</li>
 					<li>
-						<h3>Dumbbell Hammer Curl:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Dumbbell Hammer Curl:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 12 10 8 6</p>
@@ -507,8 +510,8 @@
 						</div>
 				 	</li>	
 					<li>
-						<h3>Dips:</h3>
-						<div class="ex_content">
+						<div class="list-heading"><h3>Dips:</h3></div>
+						<div class="ex_content  container-fluid">
 							<div class="exersise_info">							
 								<p>Sets: 4</p>
 								<p>Reps: 20 per set</p>

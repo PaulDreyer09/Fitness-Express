@@ -1,0 +1,193 @@
+$color-dark-main: #2c3e50;
+$color-main-light: #435d77;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif, serif !important;
+
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    90deg,
+    #22224f 0%,
+    white 25%,
+    white 75%,
+    #22224f 100%
+  );
+  background-attachment: fixed;
+}
+
+@import "header";
+
+main {
+  align-content: center;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#content {
+  margin: 0 auto;
+  background: #fff;
+  max-width: 960px;
+  padding: 1em 0 0 0;
+
+  h2 {
+    font-family: Arial, "sans-serif";
+    margin: 0;
+
+    font-size: 200%;
+  }
+  p {
+    font-size: 150%;
+  }
+}
+section {
+  margin-bottom: 1.5em;
+  min-height: 280px;
+
+  p {
+    margin-top: 3em;
+  }
+
+  h2 {
+    display: block;
+    text-align: center;
+    line-height: 2em;
+    color: white;
+    background-color: $color-main-light;
+  }
+  img {
+    max-width: 45%;
+    margin: 2em 0;
+  }
+}
+
+#gains-section img {
+  margin: 2em 5% 0 0;
+  float: left;
+}
+
+#routine-section img {
+  margin: 2em 0 0 5%;
+  max-width: 40%;
+  float: right;
+}
+
+#nutrition-section {
+  clear: both;
+
+  img {
+    margin: 2em 0 0 5%;
+    float: right;
+    border: 1px solid black;
+  }
+}
+
+#exercise-section img {
+  margin: 2em 5% 0 0;
+  float: left;
+}
+
+#top-link {
+  display: block;
+  padding-left: 1em;
+}
+
+@import "footer";
+
+@media only screen and (max-width: 959px) {
+  body {
+    background-image: none;
+  }
+  #content {
+    h2 {
+      font-size: 160%;
+    }
+    p {
+      font-size: 125%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #nav_menu {
+    display: none;
+  }
+
+  #mobile_menu {
+    display: block;
+  }
+
+  #content {
+    h2 {
+      font-size: 140%;
+      display: block;
+      text-align: center;
+    }
+    p {
+      font-size: 120%;
+    }
+  }
+
+  header h1 {
+    font-size: 300%;
+    line-height: 150%;
+  }
+
+  #h2-wrapper h2 {
+    padding: 0.5em 0;
+    margin: 0;
+    font-size: 220%;
+    color: white;
+  }
+
+  .sub-icon {
+    display: none;
+  }
+
+  .slicknav_menu {
+    background-color: $color-dark-main !important;
+  }
+
+  .slicknav_menu .main_li {
+    font-size: 150%;
+  }
+  section {
+    min-height: 0px;
+    display: inline-block;
+
+    img {
+      margin-top: 0;
+    }
+  }
+
+  #top-link {
+    padding-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  #h2-wrapper {
+    display: none;
+  }
+
+  section {
+    align-content: center;
+
+    img {
+      float: none !important;
+      margin: 0 !important;
+      min-width: 100%;
+    }
+
+    div {
+      padding-top: 1em;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+$color-dark-main: #2c3e50;
+$color-main-light: #435d77;
+
+/* Styles for the header */
+header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #2c3e50;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    display: block;
+    color: white;
+
+    :hover {
+      text-decoration: none;
+    }
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 400%;
+    line-height: 150%;
+  }
+}
+
+#h2-wrapper {
+  background-image: url(../images/black_pattern.png);
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    padding: 0.5em 0;
+    margin: 0;
+    font-size: 250%;
+    color: white;
+  }
+}
+
+/*Styles for the nav menu*/
+#mobile_menu {
+  display: none;
+}
+
+#nav_menu {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 3em;
+  max-width: 960px;
+  background-color: $color-dark-main;
+
+  a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+    background-color: $color-dark-main;
+  }
+
+  .main_li {
+    float: left;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    width: 20%;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 4px;
+    left: 0;
+    background-color: white;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+  }
+
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+
+  a:hover,
+  a:focus {
+    text-shadow: 0px 0px 5px white;
+  }
+  .main_li:hover > ul,
+  .main_li:hover {
+    display: block;
+  }
+  .main_li ul {
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    text-align: left;
+    padding: 0 0 0 10%;
+    margin: 0;
+    width: 120%;
+    min-width: 150px;
+    background-color: $color-dark-main;
+    border: 1px solid #bbb;
+    border-top: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    a::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 4px;
+      left: 0;
+      background-color: white;
+      transform-origin: bottom left;
+      transition: transform 0.25s ease-out;
+    }
+
+    a:hover::before {
+      transform: scaleX(0.8);
+      transform-origin: bottom left;
+    }
+  }
+
+  .main_li a:hover .sub-icon {
+    color: $color-main-light;
+  }
+}
