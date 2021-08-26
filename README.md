@@ -3,7 +3,8 @@
 
 ## Technologies
 
-This app is created purely with html and css, which was later refined with some bootstrap
+This app is created purely with html and css, which was later refined with some bootstrap.
+The css was also replaced with sass as some experimentation for educational purposes.
 
 ### Disclamer
 
